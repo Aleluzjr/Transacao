@@ -1,11 +1,12 @@
 // src/pages/TransactionListPage.js
 import React, { useEffect, useState, useMemo } from 'react';
 import axios from 'axios';
-import Pagination from '../components/Pagination.js';
+import Pagination from '../components/Pagination';
 import Navbar from '../components/navBar';
 import { Toaster, toast } from 'sonner';
 
-let PageSize = 10;
+
+const PageSize = 5;
 
 const TransactionListPage = () => {
   const [transactions, setTransactions] = useState([]);
